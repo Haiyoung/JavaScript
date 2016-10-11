@@ -1,0 +1,57 @@
+<!DOCTYPE html><body>
+   <canvas id='canvas' width='640' height='480'></canvas>
+   <link rel="stylesheet" type="text/css" href="">
+   <script type='text/javascript'>
+   	(function(){
+		var canvas = document.getElementById('canvas');
+		var context = canvas.getContext('2d');
+		context.lineWidth=10;
+		context.fillStyle = 'yellow';
+		context.strokeStyle = 'black';
+		context.beginPath();
+		context.arc(320, 240, 200, 0, 2 * Math.PI);
+		context.fill();
+		context.stroke();
+		context.closePath();
+
+		context.fillStyle = 'black';
+		 
+		context.beginPath();
+		context.arc(270, 175, 20, 0, 2 * Math.PI);
+		context.fill();
+		context.stroke();
+		context.closePath();
+		 
+		context.beginPath();
+		context.arc(370, 175, 20, 0, 2 * Math.PI);
+		context.fill();
+		context.stroke();
+		context.closePath();
+
+		context.fillStyle = 'yellow';
+		context.beginPath();
+		context.arc(320, 240, 120, 0, -1 * Math.PI);
+		context.fill()
+		context.stroke();
+		context.closePath();
+
+		context.fillStyle = 'black';
+		 
+		context.beginPath();
+		context.moveTo(180,250);
+		context.lineTo(220,230);
+		context.stroke();
+		context.closePath();
+
+
+		context.fillStyle = 'black';
+		 
+		context.beginPath();
+		context.moveTo(460,250);
+		context.lineTo(420,230);
+		context.stroke();
+		context.closePath();
+   	})();
+   </script>
+ 
+</body></html>
